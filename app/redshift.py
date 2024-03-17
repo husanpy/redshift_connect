@@ -6,7 +6,7 @@ from dbt_prod.fct_aggregated
 limit 100"""
 
 
-def query_from_redshift(query: str, host, port, db, user, pwd) -> tuple[list, tuple[list]]:
+def query_from_redshift(query: str, host: str, port: int, db: str, user: str, pwd: str) -> tuple[list, tuple[list]]:
     """
     :param query: query to run against redshift
     :param host: redshift server host
