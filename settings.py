@@ -2,7 +2,7 @@ from decouple import config
 
 
 REDSHIFT_HOST = config('REDSHIFT_HOST')
-REDSHIFT_PORT = config('REDSHIFT_PORT')
+REDSHIFT_PORT = config('REDSHIFT_PORT', cast=int)
 REDSHIFT_DB = config('REDSHIFT_DB')
 REDSHIFT_USER = config('REDSHIFT_USER')
 REDSHIFT_PASSWORD = config('REDSHIFT_PASSWORD')
